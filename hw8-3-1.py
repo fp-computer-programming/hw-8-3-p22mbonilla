@@ -1,13 +1,14 @@
 # Author MB 12/09/2021
 
-def count_odds(lst):
+def count_odds(num):
     total = 0
-    for odd in lst:
-        if odd % 2 != 0:
+    y = 0
+    while y < len(num):
+        if num[y] % 2 != 0:
             total += 1
-            odd += 1
+            y += 1   
         else:
-            odd += 1
+            y += 1
     return total
 
 print(count_odds([1, 2, 3, 4, 5, 6]) == 3)

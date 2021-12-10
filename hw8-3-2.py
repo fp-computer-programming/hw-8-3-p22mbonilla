@@ -1,13 +1,12 @@
 # Author MB 12/09/2021
 
-def sum_odds(lst):
+def sum_odds(num):
     total = 0
-    for x in lst:
-        if x % 2 != 0:
-            total += x
-            x += 1
-        else:
-            x += 1
+    y = 0
+    while y < len(num):
+        if num[y] % 2 != 0:
+            total += num[y]
+        y += 1
     return total
 
 print(sum_odds([1, 2, 3, 4, 5, 6]) == 9)
